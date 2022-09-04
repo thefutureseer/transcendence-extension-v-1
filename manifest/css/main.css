@@ -52,3 +52,17 @@ body {
 html {
   height: 100%;
 }
+
+/* pop up button */
+#change-color {
+  height: 30px;
+  width: 87px !important;
+  /* outline: none; */
+  margin: 10px;
+  border-radius: 14px;
+}
+
+#change-color.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}

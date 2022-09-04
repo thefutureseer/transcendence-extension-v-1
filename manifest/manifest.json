@@ -5,18 +5,46 @@
   "manifest_version": 3,
   "incognito": "split",
   "chrome_url_overrides": {
-    "newtab":"index.html"
+    "newtab":"html/index.html"
   },
+  "content_scripts": [
+    {
+       "matches": [ "<all_urls>" ],
+       "js": [ "js/content.js"]
+    }
+  ],
+
   "permissions": [
     "activeTab",
+    "scripting",
     "contextMenus",
     "tabs",
-    "storage"
-  ],
+    "storage",
+    "https://*/*"],
 
   "background": {
     "service_worker": "js/background.js"
   },
 
-  "icons": { "128":"images/icon.png" }
+  "action": {
+    "default_popup":"html/index.html",
+    "default_icon": {
+      "16":"images/icon.png",
+      "32":"images/icon.png",
+      "48":"images/icon.png",
+      "128":"images/icon.png"
+    }
+  },
+
+  "icons":{
+    "16":"images/icon.png",
+    "32":"images/icon.png",
+    "48":"images/icon.png",
+    "128":"images/icon.png"
+  },
+
+
+  "browser_action" : {
+    
+  }
 }

@@ -13,7 +13,7 @@
   }
 
   if (userName === null) {
-    userName = "My friend";
+    userName = "Hello My friend";
     console.log("if null name: ", userName);
   }
 
