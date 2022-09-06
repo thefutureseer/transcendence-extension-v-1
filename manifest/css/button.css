@@ -1,14 +1,14 @@
+
 /* pop up button */
-button {
+#changeColor {
   height: 30px;
   width: 87px !important;
-  outline: none;
+  /* outline: none; */
   margin: 10px;
-  border: none;
-  border-radius: 2px;
+  border-radius: 14px;
 }
 
-button.current {
+#changeColor.current {
   box-shadow: 0 0 0 2px white,
               0 0 0 4px black;
 }

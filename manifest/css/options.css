@@ -1,0 +1,12 @@
+#buttonDiv {
+  height: 72px;
+  width: 233px;
+  background: none; 
+  border: 1px solid #313131;
+  /* border-radius: 50px;  */
+}
+
+/* make the current button stand out */
+.current {
+  height: 30px !important;
+}
