@@ -25,7 +25,7 @@ function constructOptions(buttonColors) {
     let currentColor = data.color;
     // For each color we were provided…
     for (let buttonColor of buttonColors) {
-      // set styles for buttons
+      // …create a button with that color…
       let styles = `
       height:30px;
       width:110px;
@@ -34,6 +34,9 @@ function constructOptions(buttonColors) {
       let button = document.createElement("button");
       button.dataset.color = buttonColor;
       button.style = styles;
+      button.style.backgroundColor = buttonColor;
+
+      button.dataset.color = buttonColor;
       button.style.backgroundColor = buttonColor;
 
       // …mark the currently selected color…

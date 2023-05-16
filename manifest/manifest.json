@@ -7,20 +7,16 @@
   "chrome_url_overrides": {
     "newtab":"html/index.html"
   },
-
+  "background": {
+    "service_worker": "js/background.js"
+  },
   "options_page": "html/options.html",
-
   "permissions": [ 
     "storage", 
     "activeTab", 
     "scripting",
     "contextMenus",
     "tabs"],
-
-  "background": {
-    "service_worker": "js/background.js"
-  },
-
   "action": {
     "default_popup":"html/popup.html",
     "default_icon": {
@@ -30,16 +26,10 @@
       "128":"images/icon.png"
     }
   },
-
   "icons":{
     "16":"images/icon.png",
     "32":"images/icon.png",
     "48":"images/icon.png",
     "128":"images/icon.png"
-  },
-
-
-  "browser_action" : {
-    
   }
 }
