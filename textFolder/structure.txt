@@ -1,0 +1,16 @@
+call-god-transcendence-extension/
+├── icons/
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png
+├── scripts/
+│   ├── background.js
+│   └── popup.js
+├── styles/
+│   ├── popup.css
+│   └── options.css
+├── html/
+│   ├── popup.html
+│   └── options.html
+├── manifest.json
+└── README.md
